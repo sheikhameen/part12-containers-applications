@@ -1,0 +1,12 @@
+Script started on 2024-12-10 18:58:18+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="192" LINES="42"]
+sheikhameen@fedora:~$ docker start -i bold_thompson
+root@b51c0e5cfd37:/# nano /usr/src/app/index.js
+root@b51c0e5cfd37:/# cat /usr/src/app/index.js
+console.log('Hello World')
+root@b51c0e5cfd37:/# exit
+exit
+sheikhameen@fedora:~$ exit
+exit
+
+Script done on 2024-12-10 19:05:27+08:00 [COMMAND_EXIT_CODE="0"]
+
