@@ -1,6 +1,6 @@
-import axios from "axios";
+import apiClient from "../utils/apiClient";
 
-const baseUrl = "/api/users";
+const baseUrl = "/users";
 let token = null;
 
 const STORAGE_KEY = "loggedBlogAppUser";
@@ -27,12 +27,12 @@ const clearCurrentUser = () => {
 };
 
 const getAllUsers = async () => {
-  const response = await axios.get(baseUrl);
+  const response = await apiClient.get(baseUrl);
   return response.data;
 };
 
 const getOneUser = async (id) => {
-  const response = await axios.get(`${baseUrl}/${id}`);
+  const response = await apiClient.get(`${baseUrl}/${id}`);
   return response.data;
 };
 
